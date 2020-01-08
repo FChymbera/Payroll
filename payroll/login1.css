@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)), url(adventure-asia-background-733174.jpg);
+    background-size: cover;
+}
+
+
+/* page header ehc*/
+
+.header {
+    text-align: center;
+    /*color: rgb(253, 182, 4);
+    text-shadow: 0 3px rgb(63, 48, 10); */
+    color: rgb(253, 182, 4);
+    text-shadow: 2px 3px rgb(63, 48, 10);
+    position: relative;
+}
+
+
+/* motto */
+
+.header p {
+    position: relative;
+    font-size: 20px;
+    top: -10px;
+    text-decoration-line: overline;
+    text-decoration-color: black;
+    text-shadow: 0 1px black;
+}
+
+.header img {
+    margin-top: 10px;
+}
+
+
+/* login container */
+
+.box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    padding: 20px;
+    background: rgba(0, 0, 0, .8);
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 5px rgb(0, 0, 0, .5)
+}
+
+
+/* system name header */
+
+.box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: goldenrod;
+    text-align: center;
+}
+
+
+/* input box positioning */
+
+.box .inputBox {
+    position: relative;
+}
+
+
+/* input box styles */
+
+.box .inputBox input {
+    width: 90%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+
+/* label styles */
+
+.box .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    padding: 10px 0;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+/* on input box focus */
+
+.box .inputBox input:focus~label {
+    top: -20px;
+    left: 0;
+    color: gold;
+    font-size: 12px;
+}
+
+
+/* on valid required field */
+
+.box .inputBox input:valid~label {
+    top: -20px;
+    left: 0;
+    color: gold;
+    font-size: 12px;
+}
+
+
+/* checkbox styles */
+
+.box [type=checkbox] {
+    position: relative;
+    left: 2px;
+    bottom: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+
+/* admin label */
+
+.box label {
+    position: relative;
+    top: -18px;
+    left: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+}
+
+
+/* Submit button */
+
+.box [type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: goldenrod;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 5px;
+}
+
+
+/* on submit hover */
+
+.box [type="submit"]:hover {
+    transition: .5s;
+    border-radius: 10px;
+}
+
+#errormsg {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* logo */

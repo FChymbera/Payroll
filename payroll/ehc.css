@@ -1,0 +1,91 @@
+.box input[type="text"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px 5px;
+    width: 200px;
+    outline: none;
+    color: gold;
+    border-radius: 25px;
+    transition: 0.25s;
+    font-family: cambria;
+    font-size: 100%;
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 14px 40px;
+    outline: none;
+    color: black;
+    border-radius: 25px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: cambria;
+    font-size: 90%;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 250px;
+    border-color: goldenrod;
+    background-color: rgb(46, 36, 36);
+}
+
+.box {
+    width: 280px;
+    padding: 30px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .1);
+    border-radius: 30px;
+    opacity: 1;
+}
+
+.box input[type="submit"]:hover {
+    background: goldenrod;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(0, 0, 50, 0.2), rgba(0, 0, 50, 0.2)), url(adventure-asia-background-733174.jpg);
+    background-size: cover;
+}
+
+.header {
+    text-align: center;
+    /*color: rgb(253, 182, 4);
+          text-shadow: 0 3px rgb(63, 48, 10); */
+    color: rgb(253, 182, 4);
+    text-shadow: 2px 3px rgb(63, 48, 10);
+    position: relative;
+}
+
+
+/* motto */
+
+.header p {
+    position: relative;
+    font-size: 20px;
+    top: -10px;
+    text-decoration-line: overline;
+    text-decoration-color: black;
+    text-shadow: 0 1px black;
+}
+
+.header img {
+    margin-top: 10px;
+}

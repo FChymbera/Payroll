@@ -1,0 +1,120 @@
+#attendence_modal {
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: open;
+    animation-duration: .5s;
+    z-index: 10;
+    border: 3px solid goldenrod;
+    border-radius: 25px;
+    background-color: rgb(240, 240, 240);
+    width: 500px;
+    max-width: 80%;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    pointer-events: all;
+}
+
+.modal_content2 {
+    height: 250px;
+}
+
+@keyframes open {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalA h1 {
+    text-align: center;
+    margin-left: 8%;
+}
+
+.modal-header .modal-close {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    color: goldenrod;
+}
+
+.modalA form {
+    height: 400px;
+    overflow: auto;
+}
+
+.modalA input[type=text],
+[type=time],
+select,
+input[type=date] {
+    width: 80%;
+    padding: 10px 20px;
+    margin: 8px 10%;
+    display: inline-block;
+    outline: none;
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-weight: bolder;
+}
+
+.modalA label {
+    margin-left: 10%;
+}
+
+#Ctime {
+    pointer-events: none;
+}
+
+.modalA input[value="Log-in"] {
+    width: 25%;
+    background-color: rgb(56, 55, 55);
+    color: white;
+    padding: 14px 20px;
+    margin-top: 20px;
+    margin-left: 40%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.modalA input[type=submit]:hover {
+    color: goldenrod;
+}
+
+.modalA input[type=button]:hover {
+    color: goldenrod;
+}
+
+#attendence_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+    pointer-events: none;
+}
+
+#A_closed {
+    display: none;
+}

@@ -1,0 +1,131 @@
+#modal {
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: open;
+    animation-duration: .5s;
+    z-index: 10;
+    border: 3px solid goldenrod;
+    border-radius: 25px;
+    background-color: rgb(240, 240, 240);
+    width: 500px;
+    max-width: 80%;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    pointer-events: all;
+}
+
+@keyframes open {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal h1 {
+    text-align: center;
+    margin-left: 25%;
+}
+
+.modal-header .modal-close {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.modal form {
+    height: 400px;
+    overflow: auto;
+}
+
+#epmId {
+    text-align: center;
+    font-weight: bolder;
+    width: 60%;
+    margin-left: 20%
+}
+
+.modal input[type=text],
+input[list],
+[type=time],
+select,
+input[type=password] {
+    width: 80%;
+    padding: 10px 20px;
+    margin: 8px 10%;
+    display: inline-block;
+    outline: none;
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.modal label {
+    margin-left: 10%;
+}
+
+.modal input[value="Time"] {
+    width: 25%;
+    background-color: rgb(56, 55, 55);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 10%;
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#Ctime {
+    pointer-events: none;
+}
+
+.modal input[value="Reset"],
+[value="Submit"] {
+    width: 25%;
+    background-color: rgb(56, 55, 55);
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 10%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.modal input[type=submit]:hover {
+    color: goldenrod;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+    pointer-events: none;
+    /* background: url(account.jpg); */
+    /* background-size: cover; */
+}
+
+#closed {
+    display: none;
+}
